@@ -153,7 +153,7 @@ function init() {
   //darMode = false -> light mode enable karna h 
   darkMode = false;
 
-  //
+  
 // const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   const value = localStorage.getItem("dark-mode");
@@ -164,11 +164,9 @@ function init() {
     lightModeProperties();
   }
   else if(value == "true") {
-    console.log("truer k andar");
     darkModeProperties();
   }
   else if(value == "false") {
-    console.log("false k andar");
     lightModeProperties();
   }
 
